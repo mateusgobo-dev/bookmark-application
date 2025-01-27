@@ -1,15 +1,18 @@
 package br.com.mgobo.profileapp.api.services;
 
 import br.com.mgobo.profileapp.api.entities.Customer;
+import br.com.mgobo.profileapp.api.parsers.CustomerDeserialize;
 import br.com.mgobo.profileapp.api.repositories.CustomerRepository;
 import br.com.mgobo.profileapp.web.dto.CustomerDto;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
-import java.util.List;
+import java.net.URI;
 import java.util.Optional;
 
-import static br.com.mgobo.profileapp.api.parsers.CustomerDeserialize.customer;
 import static br.com.mgobo.profileapp.api.parsers.CustomerSerialize.customerDto;
 import static br.com.mgobo.profileapp.api.parsers.CustomerSerialize.toListCustomerDto;
 
@@ -18,28 +21,53 @@ import static br.com.mgobo.profileapp.api.parsers.CustomerSerialize.toListCustom
 public class CustomerService {
     private final CustomerRepository customerRepository;
 
-    public CustomerDto saveAndFlush(CustomerDto entity) {
-        return customerDto.apply(customerRepository.saveAndFlush(customer.apply(entity)));
+    public ResponseEntity<?> saveCustomer(CustomerDto customer) {
+        CustomerDto newCustomer = customerDto.apply(customerRepository.saveAndFlush(CustomerDeserialize.customer.apply(customer)));
+        return ResponseEntity.created(URI.create("/find/" + newCustomer.id())).body("Customer has been created %s".formatted(newCustomer));
     }
 
-    public List<CustomerDto> findAll() {
-        return toListCustomerDto.apply(customerRepository.findAll());
-    }
-
-    public boolean deleteById(Long id) throws Exception{
+    public ResponseEntity<?> updateCustomer(CustomerDto customer) {
         try {
-            customerRepository.deleteById(id);
-            return true;
-        }catch (Exception e) {
-            throw new Exception("Error has been occured at customer removing, error %s".formatted(e.getMessage()));
+            CustomerDto updateCustomer = customerDto.apply(customerRepository.saveAndFlush(CustomerDeserialize.customer.apply(customer)));
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).header("/get", "/find/" + customer.id().toString()).body(updateCustomer);
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
 
-    public CustomerDto findCustomerByMail(String mail) {
-        return Optional.ofNullable(customerDto.apply(customerRepository.findCustomerByMail(mail))).orElseThrow(()->new RuntimeException("Customer has not founded for mail %s".formatted(mail)));
+    public ResponseEntity<?> findAll() {
+        try {
+            return ResponseEntity.ok(toListCustomerDto.apply(customerRepository.findAll()));
+        }catch (Exception ex){
+            return ResponseEntity.badRequest().body(ex.getMessage());
+        }
     }
 
-    public Optional<Customer> findById(Long id) {
-        return Optional.ofNullable(customerRepository.findById(id)).orElseThrow(()-> new RuntimeException("Customer has not founded for id %s".formatted(id)));
+    public ResponseEntity<?> deleteProfile(@PathVariable Long id) {
+        try{
+            this.customerRepository.deleteById(id);
+            return ResponseEntity.status(HttpStatus.MOVED_PERMANENTLY).body("Customer %s has been deleted.".formatted(id));
+        }catch (Exception e){
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
     }
+
+    public ResponseEntity<?> findByMail(@PathVariable String mail) {
+        try{
+            CustomerDto customer = Optional.ofNullable(customerDto.apply(customerRepository.findCustomerByMail(mail))).orElseThrow(() -> new RuntimeException("Customer has not founded for mail %s".formatted(mail)));
+            return ResponseEntity.ok(customer);
+        }catch (Exception e){
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    public ResponseEntity<?> findById(@PathVariable Long id) {
+        try{
+            Optional<Customer> customer = Optional.ofNullable(customerRepository.findById(id)).orElseThrow(() -> new RuntimeException("Customer has not founded for id %s".formatted(id)));
+            return ResponseEntity.ok(customerDto.apply(customer.get()));
+        }catch (Exception e){
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
 }
