@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.net.URI;
 import java.util.Optional;
 
+import static br.com.mgobo.profileapp.api.parsers.CustomerDeserialize.json;
 import static br.com.mgobo.profileapp.api.parsers.CustomerSerialize.customerDto;
 import static br.com.mgobo.profileapp.api.parsers.CustomerSerialize.toListCustomerDto;
 
@@ -23,7 +24,9 @@ public class CustomerService {
 
     public ResponseEntity<?> saveCustomer(CustomerDto customer) {
         CustomerDto newCustomer = customerDto.apply(customerRepository.saveAndFlush(CustomerDeserialize.customer.apply(customer)));
-        return ResponseEntity.created(URI.create("/find/" + newCustomer.id())).body("Customer has been created %s".formatted(newCustomer));
+        return ResponseEntity.created(URI.create("/find/" + newCustomer.id()))
+                .header("/find/" + newCustomer.id(), newCustomer.name())
+                .body("Customer has been created %s".formatted(newCustomer));
     }
 
     public ResponseEntity<?> updateCustomer(CustomerDto customer) {
