@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75bd5c58-630c-4a81-b0ae-4d948c1c4f9d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
     "Spring Boot.ProductAppApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mateus.gobo/github-repo/bookmark-application/product-app",
+    "last_opened_file_path": "/home/mateus.gobo/compasso",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -139,7 +139,9 @@
       <option name="presentableId" value="Default" />
       <updated>1738062331525</updated>
       <workItem from="1738062332724" duration="619000" />
-      <workItem from="1738063407123" duration="7236000" />
+      <workItem from="1738063407123" duration="7266000" />
+      <workItem from="1738071335149" duration="2207000" />
+      <workItem from="1738086805149" duration="795000" />
     </task>
     <servers />
   </component>
