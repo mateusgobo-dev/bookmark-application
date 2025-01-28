@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75bd5c58-630c-4a81-b0ae-4d948c1c4f9d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/circuits/ProductClientCircuit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/commons/JsonToObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/config/ConfigProductApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/entities/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/entities/Rating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/parser/ProductDeserialize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/repositories/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/repositories/RatingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/web/dto/ProductDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/web/dto/RatingDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/web/mapper/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/web/parser/ProductDtoSerialize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/ProductAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/ProductAppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/client/ProductClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/clients/ProductClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/BaseIntegratedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/BaseIntegratedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile-app/src/test/java/br/com/mgobo/profileapp/BaseIntegratedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile-app/src/test/java/br/com/mgobo/profileapp/BaseIntegratedTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2sFrnbGyiTSncxw2LINDuz5vByp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.CustomerControllerTest.executor": "Run",
+    "JUnit.ProductControllerTest.findAll.executor": "Debug",
+    "JUnit.ProductControllerTest.findById.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.ProductAppApplication.executor": "Debug",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/mateus.gobo/github-repo/bookmark-application/product-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.mgobo.web.parser" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ProductControllerTest.findById">
+    <configuration name="CustomerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="profile-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mgobo.profileapp.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.mgobo.profileapp.controllers" />
+      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.profileapp.controllers.CustomerControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductControllerTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mgobo.productapp.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.mgobo.productapp.controllers" />
+      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.productapp.controllers.ProductControllerTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductControllerTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mgobo.productapp.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.mgobo.productapp.controllers" />
+      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.productapp.controllers.ProductControllerTest" />
+      <option name="METHOD_NAME" value="findById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="product-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.mgobo.ProductAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProductControllerTest.findById" />
+        <item itemvalue="JUnit.ProductControllerTest.findAll" />
+        <item itemvalue="JUnit.CustomerControllerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.153" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75bd5c58-630c-4a81-b0ae-4d948c1c4f9d" name="Changes" comment="" />
+      <created>1738062331525</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738062331525</updated>
+      <workItem from="1738062332724" duration="619000" />
+      <workItem from="1738063407123" duration="7109000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
