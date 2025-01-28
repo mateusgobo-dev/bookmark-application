@@ -5,6 +5,7 @@ import br.com.mgobo.profileapp.api.parsers.CustomerDeserialize;
 import br.com.mgobo.profileapp.api.repositories.CustomerRepository;
 import br.com.mgobo.profileapp.web.dto.CustomerDto;
 import lombok.RequiredArgsConstructor;
+import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -46,7 +47,7 @@ public class CustomerService {
         }
     }
 
-    public ResponseEntity<?> deleteProfile(@PathVariable Long id) {
+    public ResponseEntity<?> deleteProfile(Long id) {
         try{
             this.customerRepository.deleteById(id);
             return ResponseEntity.status(HttpStatus.MOVED_PERMANENTLY).body("Customer %s has been deleted.".formatted(id));
@@ -55,7 +56,7 @@ public class CustomerService {
         }
     }
 
-    public ResponseEntity<?> findByMail(@PathVariable String mail) {
+    public ResponseEntity<?> findByMail(String mail) {
         try{
             CustomerDto customer = Optional.ofNullable(customerDto.apply(customerRepository.findCustomerByMail(mail))).orElseThrow(() -> new RuntimeException("Customer has not founded for mail %s".formatted(mail)));
             return ResponseEntity.ok(customer);
@@ -64,7 +65,7 @@ public class CustomerService {
         }
     }
 
-    public ResponseEntity<?> findById(@PathVariable Long id) {
+    public ResponseEntity<?> findById(Long id) {
         try{
             Optional<Customer> customer = Optional.ofNullable(customerRepository.findById(id)).orElseThrow(() -> new RuntimeException("Customer has not founded for id %s".formatted(id)));
             return ResponseEntity.ok(customerDto.apply(customer.get()));
@@ -73,4 +74,12 @@ public class CustomerService {
         }
     }
 
+    public ResponseEntity<?> findCustomerByMailAndPassword(String email, String password) {
+        try {
+            CustomerDto customer = Optional.ofNullable(customerDto.apply(customerRepository.findCustomerByMailAndPassword(email, password))).orElseThrow(() -> new RuntimeException("Customer has not been founded for email or password"));
+            return ResponseEntity.ok(customer);
+        }catch (Exception e){
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
 }

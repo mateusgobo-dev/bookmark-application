@@ -1,6 +1,7 @@
 package br.com.mgobo.profileapp.web.controllers;
 
 import br.com.mgobo.profileapp.api.services.CustomerService;
+import br.com.mgobo.profileapp.web.dto.CheckUser;
 import br.com.mgobo.profileapp.web.dto.CustomerDto;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -28,6 +29,11 @@ public class CustomerController {
         return this.customerService.saveCustomer(customerDto);
     }
 
+    @PostMapping("/check")
+    public ResponseEntity<?> findByMailAndPassword(@Valid @RequestBody CheckUser checkUser){
+        return this.customerService.findCustomerByMailAndPassword(checkUser.email(), checkUser.password());
+    }
+
     @PutMapping
     public ResponseEntity<?> updateProfile(@Valid @RequestBody CustomerDto customerDto) {
         return this.customerService.updateCustomer(customerDto);
@@ -35,7 +41,7 @@ public class CustomerController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteProfile(@PathVariable Long id) {
-        return this.deleteProfile(id);
+        return this.customerService.deleteProfile(id);
     }
 
     @GetMapping("/mail/{mail}")

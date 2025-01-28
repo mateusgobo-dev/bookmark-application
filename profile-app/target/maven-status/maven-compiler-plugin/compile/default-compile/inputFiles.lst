@@ -1,0 +1,11 @@
+/home/mateusgobo/github-repo/bookmark-application/profile-app/src/main/java/br/com/mgobo/profileapp/ProfileAppApplication.java
+/home/mateusgobo/github-repo/bookmark-application/profile-app/src/main/java/br/com/mgobo/profileapp/api/entities/Customer.java
+/home/mateusgobo/github-repo/bookmark-application/profile-app/src/main/java/br/com/mgobo/profileapp/api/mapper/CustomerMapper.java
+/home/mateusgobo/github-repo/bookmark-application/profile-app/src/main/java/br/com/mgobo/profileapp/api/parsers/CustomerDeserialize.java
+/home/mateusgobo/github-repo/bookmark-application/profile-app/src/main/java/br/com/mgobo/profileapp/api/parsers/CustomerSerialize.java
+/home/mateusgobo/github-repo/bookmark-application/profile-app/src/main/java/br/com/mgobo/profileapp/api/repositories/CustomerRepository.java
+/home/mateusgobo/github-repo/bookmark-application/profile-app/src/main/java/br/com/mgobo/profileapp/api/services/CustomerService.java
+/home/mateusgobo/github-repo/bookmark-application/profile-app/src/main/java/br/com/mgobo/profileapp/config/ConfigProfileApp.java
+/home/mateusgobo/github-repo/bookmark-application/profile-app/src/main/java/br/com/mgobo/profileapp/web/advices/GlobalExceptionHandler.java
+/home/mateusgobo/github-repo/bookmark-application/profile-app/src/main/java/br/com/mgobo/profileapp/web/controllers/CustomerController.java
+/home/mateusgobo/github-repo/bookmark-application/profile-app/src/main/java/br/com/mgobo/profileapp/web/dto/CustomerDto.java
