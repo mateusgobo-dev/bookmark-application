@@ -31,9 +31,6 @@ public class ProductControllerTest extends BaseIntegratedTest {
     @Autowired
     private ProductRepository productRepository;
 
-    @Autowired
-    private RatingRepository ratingRepository;
-
     @BeforeAll
     static void setUpBeforeClass() throws Exception {
         postgreSQLContainer.start();
