@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: product-app-producer
+  rabbitmq:
+    host: ${host:localhost}
+    username: ${user:guest}
+    password: ${pass:guest}
+    port: ${port:5672}
+    listener:
+      direct:
+        retry:
+          enabled: true
+          max-attempts: 5
+          initial-interval: 2000ms
+          multiplier: 2
+        consumers-per-queue: ${consumers:100}
+    cache:
+      connection:
+        mode: channel
+  datasource:
+    url: jdbc:postgresql://localhost:5433/product-db
+    username: sa
+    password: 456
+    driver-class-name: org.postgresql.Driver

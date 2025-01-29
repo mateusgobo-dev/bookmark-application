@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/profile-app/pom.xml" />
         <option value="$PROJECT_DIR$/product-app/pom.xml" />
+        <option value="$PROJECT_DIR$/product-app-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/product-app-consumer/pom.xml" />
       </list>
     </option>
   </component>

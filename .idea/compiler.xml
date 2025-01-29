@@ -10,11 +10,23 @@
         <module name="profile-app" />
         <module name="product-app" />
       </profile>
+      <profile name="Annotation profile for product-app-consumer" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="product-app-consumer" />
+        <module name="product-app-producer" />
+      </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="product-app" options="-parameters" />
+      <module name="product-app-consumer" options="-parameters" />
+      <module name="product-app-producer" options="-parameters" />
       <module name="profile-app" options="-parameters" />
     </option>
   </component>
