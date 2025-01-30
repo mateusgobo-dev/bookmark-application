@@ -1,7 +1,6 @@
 package br.com.mgobo.productapp.controllers;
 
 import br.com.mgobo.api.circuits.ProductClientCircuit;
-import br.com.mgobo.api.commons.JsonToObject;
 import br.com.mgobo.api.entities.Product;
 import br.com.mgobo.api.parser.ProductDeserialize;
 import br.com.mgobo.api.repositories.ProductRepository;
@@ -9,16 +8,24 @@ import br.com.mgobo.productapp.BaseIntegratedTest;
 import br.com.mgobo.web.dto.ProductDto;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.http.ResponseEntity;
 
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.List;
 
 @ComponentScan(value = "br.com.mgobo.*")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class ProductControllerTest extends BaseIntegratedTest {
+
+    private final Path path = Path.of(System.getProperty("user.dir"), "src", "test", "resources", "products");
 
     @Autowired
     private ProductClientCircuit productClientCircuit;
@@ -27,26 +34,72 @@ public class ProductControllerTest extends BaseIntegratedTest {
     private ProductRepository productRepository;
 
     @BeforeAll
-    static void setUpBeforeClass() throws Exception {
+    static void setUpBeforeClass() {
         postgreSQLContainer.start();
     }
 
     @AfterAll
-    static void tearDownAfterClass() throws Exception {
+    static void tearDownAfterClass() {
         postgreSQLContainer.stop();
     }
 
+    @BeforeEach
+    void setUp() throws IOException {
+        Files.createDirectories(path);
+    }
+
+    private void saveProduct(Product product) {
+        product.setId(null);
+        product = this.productRepository.saveAndFlush(product);
+        LoggerFactory.getLogger(getClass()).info("Product saved: {}", product);
+    }
+
     @Test
-    public void findAll() {
-        String value = this.productClientCircuit.getProducts().getBody().toString();
-        JsonToObject.converterToListObject.apply(value, ProductDto.class);
-        System.out.println(value);
+    public void findAll() throws Exception {
+        ResponseEntity<List<ProductDto>> response = this.productClientCircuit.getProducts();
+        if (response.getStatusCode().is2xxSuccessful()) {
+            List<ProductDto> values = response.getBody();
+            if (!values.isEmpty()) {
+                File file = new File(path.toFile(), "productsDto.dat");
+                if (!file.exists()) {
+                    try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file))) {
+                        oos.writeObject(values);
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                }
+                values.forEach(System.out::println);
+            }
+        }
+    }
+
+    @Test
+    public void deserializeProducts() throws Exception {
+        File file = new File(path.toFile(), "productsDto.dat");
+        try (ObjectInputStream iis = new ObjectInputStream(new FileInputStream(file))) {
+            List<ProductDto> values = (List<ProductDto>) iis.readObject();
+            values.forEach(System.out::println);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    @Test
+    public void deserializeProductsAndSaveOnDatabase() throws Exception {
+        File file = new File(path.toFile(), "productsDto.dat");
+        try (ObjectInputStream iis = new ObjectInputStream(new FileInputStream(file))) {
+            List<ProductDto> values = (List<ProductDto>) iis.readObject();
+            values.stream().forEach(p -> {
+                saveProduct(ProductDeserialize.deserialize.apply(p));
+            });
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Test
     public void findById() {
-        String value = this.productClientCircuit.getProductsById(1L).getBody().toString();
-        ProductDto productDto = (ProductDto) JsonToObject.converterToObject.toObject(value, ProductDto.class);
+        ProductDto productDto = this.productClientCircuit.getProductsById(1L).getBody();
         Product product = ProductDeserialize.deserialize.apply(productDto);
         product.setId(null);
         product = this.productRepository.saveAndFlush(product);

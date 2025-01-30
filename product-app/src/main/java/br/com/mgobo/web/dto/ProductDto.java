@@ -1,6 +1,8 @@
 package br.com.mgobo.web.dto;
 
-public record ProductDto(
+import java.io.Serializable;
+
+public record ProductDto (
         Long id,
         String title,
         double price,
@@ -8,7 +10,8 @@ public record ProductDto(
         String category,
         String image,
         RatingDto rating
-) {
+) implements Serializable {
+    private final static  long serialVersionUID = 1L;
     public ProductDto{
         if(id == null) {id = null;}
     }

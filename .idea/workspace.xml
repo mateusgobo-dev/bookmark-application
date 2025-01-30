@@ -5,40 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75bd5c58-630c-4a81-b0ae-4d948c1c4f9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bookmark-client/bookmark-client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/components/Header/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/components/Header/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Erro/erro.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Erro/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Home/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Home/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/produto-info.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/services/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-app-consumer/rabbitmq.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-app-producer/rabbitmq.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-app/rabbitmq.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profile-app/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/docker.sh" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/postgres.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/ProductAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/ProductAppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/postgres.sh" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/postgres.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/circuits/ProductClientCircuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/circuits/ProductClientCircuit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/clients/ProductClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/clients/ProductClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/commons/JsonToObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/commons/JsonToObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/config/ConfigProductApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/config/ConfigProductApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/web/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/web/dto/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/web/dto/RatingDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/web/dto/RatingDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-app/docker.sh" beforeDir="false" afterPath="$PROJECT_DIR$/profile-app/postgres.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile-app/postgres.sh" beforeDir="false" afterPath="$PROJECT_DIR$/profile-app/postgres.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +50,8 @@
   "keyToString": {
     "JUnit.CustomerControllerTest.executor": "Run",
     "JUnit.ProductControllerTest-dev.executor": "Run",
+    "JUnit.ProductControllerTest.deserializeProducts.executor": "Debug",
+    "JUnit.ProductControllerTest.deserializeProductsAndSaveOnDatabase.executor": "Run",
     "JUnit.ProductControllerTest.executor": "Run",
     "JUnit.ProductControllerTest.findAll.executor": "Debug",
     "JUnit.ProductControllerTest.findById.executor": "Debug",
@@ -93,6 +73,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "preferences.general",
     "ts.external.directory.path": "/home/mateusgobo/ideaIU-2024.3.1.1/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
@@ -120,11 +101,14 @@
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductControllerTest.findAll">
+  <component name="RunManager" selected="JUnit.ProductControllerTest.deserializeProductsAndSaveOnDatabase">
     <configuration name="CustomerControllerTest-dev" type="JUnit" factoryName="JUnit">
       <module name="profile-app" />
       <extension name="coverage">
@@ -194,7 +178,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductControllerTest.deserializeProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="product-app" />
       <extension name="coverage">
         <pattern>
@@ -202,15 +186,26 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
-        <option name="credential" />
-        <option name="region" />
-        <option name="useCurrentConnection" value="false" />
+      <option name="PACKAGE_NAME" value="br.com.mgobo.productapp.controllers" />
+      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.productapp.controllers.ProductControllerTest" />
+      <option name="METHOD_NAME" value="deserializeProducts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductControllerTest.deserializeProductsAndSaveOnDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mgobo.productapp.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="br.com.mgobo.productapp.controllers" />
       <option name="MAIN_CLASS_NAME" value="br.com.mgobo.productapp.controllers.ProductControllerTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="deserializeProductsAndSaveOnDatabase" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -284,8 +279,9 @@
     <list>
       <item itemvalue="JUnit.CustomerControllerTest-dev" />
       <item itemvalue="JUnit.ProductControllerTest-dev" />
+      <item itemvalue="JUnit.ProductControllerTest.deserializeProducts" />
+      <item itemvalue="JUnit.ProductControllerTest.deserializeProductsAndSaveOnDatabase" />
       <item itemvalue="JUnit.CustomerControllerTest" />
-      <item itemvalue="JUnit.ProductControllerTest" />
       <item itemvalue="JUnit.ProductControllerTest.findAll" />
       <item itemvalue="JUnit.ProductControllerTest.findById" />
       <item itemvalue="Spring Boot.ProductAppApplication" />
@@ -294,10 +290,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductControllerTest.deserializeProductsAndSaveOnDatabase" />
         <item itemvalue="JUnit.ProductControllerTest.findAll" />
-        <item itemvalue="JUnit.CustomerControllerTest" />
-        <item itemvalue="JUnit.ProductControllerTest" />
+        <item itemvalue="JUnit.ProductControllerTest.deserializeProducts" />
         <item itemvalue="JUnit.ProductControllerTest.findById" />
+        <item itemvalue="JUnit.CustomerControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -334,12 +331,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java</url>
-          <line>55</line>
+          <line>108</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java</url>
-          <line>52</line>
+          <line>105</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -363,14 +360,19 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/commons/JsonToObject.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="26" />
+          <url>file://$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="27" />
+          <line>77</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -10,7 +10,7 @@
         <module name="profile-app" />
         <module name="product-app" />
       </profile>
-      <profile name="Annotation profile for product-app-consumer" enabled="true">
+      <profile name="Annotation profile for product-app-producer" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />

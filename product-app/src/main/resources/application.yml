@@ -5,7 +5,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     username: sa
     password: 456
-    url: jdbc:postgresql://localhost:5432/product-db
+    url: jdbc:postgresql://localhost:5433/product-db
     jpa.hibernate.ddl-auto: create
     data.jdbc.dialect: postgresql
   cloud:

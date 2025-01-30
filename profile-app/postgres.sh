@@ -4,5 +4,5 @@ docker run --rm  --name customer-db \
 -e POSTGRES_USER=sa \
 -e POSTGRES_PASSWORD=123 \
 -e PGDATA=/var/lib/postgresql/data/pgdata \
--v /containers/postgres/mount:/var/lib/postgresql/data \
+-v /home/containers/customer-db/mount:/var/lib/postgresql/data \
 -d postgres

@@ -23,12 +23,13 @@ public class Product implements Serializable {
     @GeneratedValue(generator = "product_seq", strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 1000)
     private String title;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 1000)
     private double price;
 
+    @Column(length = 1000)
     private String description;
 
     @Column(nullable = false)
