@@ -1,10 +1,13 @@
 package br.com.mgobo.api.config;
 
 import org.springframework.boot.context.event.ApplicationStartedEvent;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.event.EventListener;
 
+@Primary
 @ComponentScan(value = "br.com.mgobo.*")
 @Configuration
 public class ConfigProductApp {

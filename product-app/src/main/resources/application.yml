@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: product-app
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: sa
+    password: 456
+    url: jdbc:postgresql://localhost:5432/product-db
+    jpa.hibernate.ddl-auto: create
+    data.jdbc.dialect: postgresql
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            connect-timeout: 5000
+            read-timeout: 5000
+            logger-level: full
+
+#Resilience4j
+resilience4j:
+  circuitbreaker:
+    instances:
+      productClientCircuit:
+        register-health-indicator: true
+        sliding-window-size: 5
+        minimum-number-of-calls: 3
+        failure-rate-threshold: 50
+        wait-duration-in-open-state.seconds: 60
+        allow-health-indicator-to-fail: true
+
+products:
+  url: https://fakestoreapi.com

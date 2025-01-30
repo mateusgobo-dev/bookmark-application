@@ -1,4 +1,4 @@
-docker run --name postgresql-product \
+docker run --rm  --name product-db \
 -p 5433:5432 \
 -e POSTGRES_DB=product-db \
 -e POSTGRES_USER=sa \

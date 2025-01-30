@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/bookmark-application.iml" filepath="$PROJECT_DIR$/.idea/bookmark-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookmark-client/bookmark-client.iml" filepath="$PROJECT_DIR$/bookmark-client/bookmark-client.iml" />
     </modules>
   </component>
 </project>
