@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75bd5c58-630c-4a81-b0ae-4d948c1c4f9d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Favoritos/favoritos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Favoritos/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/postgres.sh" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/postgres.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/circuits/ProductClientCircuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/circuits/ProductClientCircuit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/clients/ProductClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/clients/ProductClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/commons/JsonToObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/commons/JsonToObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/web/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/web/dto/ProductDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/web/dto/RatingDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/web/dto/RatingDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-app/postgres.sh" beforeDir="false" afterPath="$PROJECT_DIR$/profile-app/postgres.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +64,7 @@
     "Spring Boot.ProductAppProducerApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mateusgobo/github-repo/bookmark-application/bookmark-client/src",
+    "last_opened_file_path": "/home/mateusgobo/github-repo/bookmark-application/bookmark-client/src/pages/Favoritos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -87,11 +84,11 @@
       <recent name="br.com.mgobo.api.services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bookmark-client/src/pages/Favoritos" />
       <recent name="$PROJECT_DIR$/bookmark-client/src" />
       <recent name="$PROJECT_DIR$/profile-app/src/main/resources" />
       <recent name="$PROJECT_DIR$/product-app" />
       <recent name="$PROJECT_DIR$/product-app-producer" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.mgobo.api.entities" />
@@ -320,6 +317,7 @@
       <workItem from="1738086805149" duration="795000" />
       <workItem from="1738202224434" duration="9000" />
       <workItem from="1738202392506" duration="2885000" />
+      <workItem from="1738286805678" duration="1068000" />
     </task>
     <servers />
   </component>

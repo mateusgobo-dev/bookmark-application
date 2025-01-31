@@ -34,7 +34,7 @@ function Home() {
                             <img src={`${produto.image}`}
                                  alt={produto.title}/>
                             <strong>R$ {produto.price}</strong>
-                            <Link to={`/filme/${produto.id}`}>Acessar</Link>
+                            <Link to={`/produto/${produto.id}`}>Acessar</Link>
                         </article>
                     )
                 })}

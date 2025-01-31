@@ -3,6 +3,7 @@ import {useParams} from "react-router-dom";
 import api from "../../services/api";
 import {Link} from "react-router-dom";
 import "./produto-info.css"
+import {toast} from "react-toastify";
 
 function Produto() {
     const {id} = useParams();
@@ -26,6 +27,21 @@ function Produto() {
             console.log("Componente desmontado")
         }
     }, []);
+
+    function salvarProduto(){
+        const minhaLista = localStorage.getItem("@produtos");
+        let produtosSalvos = JSON.parse(minhaLista) || [];
+
+        const hasProduto = produtosSalvos.some(p => p.id === produto.id);
+        if(hasProduto){
+            toast.warn('Produto já faz parte da lista');
+            return;
+        }
+        produtosSalvos.push(produto)
+        localStorage.setItem("@produtos", JSON.stringify(produtosSalvos));
+        toast.success("Produto salvo com sucesso...");
+    }
+    
     if (loading) {
         return (
             <div className="loading">
@@ -44,7 +60,7 @@ function Produto() {
                 <strong>Avaliação: {produto.rating.rate} / 10</strong>
 
                 <div className="area-buttons">
-                    <button>Salvar</button>
+                    <button onClick={salvarProduto}>Salvar</button>
                 </div>
 
                 <Link to="/" className="voltar">Voltar</Link>
