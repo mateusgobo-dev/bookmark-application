@@ -1,4 +1,4 @@
-docker run  --name rabbitmq \
+docker run --rm  --name rabbitmq \
  -e RABBITMQ_DEFAULT_USER=admin \
  -e RABBITMQ_DEFAULT_PASS=admin \
  -p 5672:5672 \

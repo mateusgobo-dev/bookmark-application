@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
-import api from "../../services/api";
+import {api, bookmark} from "../../services/api";
 import {Link} from "react-router-dom";
 import "./produto-info.css"
 import {toast} from "react-toastify";
@@ -32,6 +32,12 @@ function Produto() {
         const minhaLista = localStorage.getItem("@produtos");
         let produtosSalvos = JSON.parse(minhaLista) || [];
 
+        const bookmarkProduct = {
+            idProduct: produto.id,
+            idCustomer: 1,
+            add: true
+        }
+
         const hasProduto = produtosSalvos.some(p => p.id === produto.id);
         if(hasProduto){
             toast.warn('Produto já faz parte da lista');
@@ -39,7 +45,17 @@ function Produto() {
         }
         produtosSalvos.push(produto)
         localStorage.setItem("@produtos", JSON.stringify(produtosSalvos));
-        toast.success("Produto salvo com sucesso...");
+
+        async function addBookmark(){
+            await  bookmark.post("/api/v1/producer", bookmarkProduct).then(
+                response => {
+                    toast.success(response.data)
+                }
+            ).catch(()=>{
+                toast.error("Falha ao adicionar favorito.")
+            });
+        }
+        addBookmark();
     }
     
     if (loading) {

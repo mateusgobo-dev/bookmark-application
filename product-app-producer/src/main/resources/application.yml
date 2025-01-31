@@ -3,7 +3,7 @@ spring:
     name: product-app-producer
   rabbitmq:
     host: ${host:localhost}
-    username: ${user:admin}
+    username: ${user:mateus.gobo}
     password: ${pass:admin}
     port: ${port:5672}
     listener:

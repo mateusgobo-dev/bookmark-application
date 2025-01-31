@@ -5,19 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75bd5c58-630c-4a81-b0ae-4d948c1c4f9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/product-app/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-app-consumer/postgres.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/services/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/api/jdbc/BookmarkProductCustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/api/jdbc/BookmarkProductCustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/config/ProductAppConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/config/ProductAppConsumerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/config/ProductAppProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/config/ProductAppProducerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/web/controllers/ProducerMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/web/controllers/ProducerMessageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-app-producer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-producer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/ProductAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/ProductAppApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/config/ConfigProductApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/config/ConfigProductApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/rabbitmq.sh" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/rabbitmq.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/broker/BookmarkProductProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-app/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/ProductAppApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/BaseIntegratedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/BaseIntegratedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-app/src/test/java/br/com/mgobo/profileapp/ProfileAppApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile-app/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/profile-app/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile-app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/profile-app/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +68,11 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.ProductAppApplication.executor": "Run",
-    "Spring Boot.ProductAppConsumerApplication.executor": "Run",
+    "Spring Boot.ProductAppConsumerApplication.executor": "Debug",
     "Spring Boot.ProductAppProducerApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mateusgobo/github-repo/bookmark-application/product-app/src/main/resources",
+    "last_opened_file_path": "/home/mateus.gobo/github-repo/bookmark-application/product-app-consumer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,7 +80,7 @@
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "preferences.general",
-    "ts.external.directory.path": "/home/mateusgobo/ideaIU-2024.3.1.1/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/home/mateus.gobo/intellij/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -88,11 +92,11 @@
       <recent name="br.com.mgobo.api.services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/product-app-consumer" />
       <recent name="$PROJECT_DIR$/product-app/src/main/resources" />
       <recent name="$PROJECT_DIR$/bookmark-client/src/pages/Favoritos" />
       <recent name="$PROJECT_DIR$/bookmark-client/src" />
       <recent name="$PROJECT_DIR$/profile-app/src/main/resources" />
-      <recent name="$PROJECT_DIR$/product-app" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.mgobo.api.entities" />
@@ -109,7 +113,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductControllerTest.findAll">
+  <component name="RunManager" selected="Spring Boot.ProductAppProducerApplication">
     <configuration name="CustomerControllerTest-dev" type="JUnit" factoryName="JUnit">
       <module name="profile-app" />
       <extension name="coverage">
@@ -332,54 +336,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java</url>
-          <line>102</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/web/controllers/ProducerMessageController.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/config/ProductAppProducerConfig.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/config/ProductAppProducerConfig.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/config/ProductAppProducerConfig.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/product-app/src/test/java/br/com/mgobo/productapp/controllers/ProductControllerTest.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/config/ConfigProductApp.java</url>
           <line>35</line>
           <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/config/ProductAppProducerConfig.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

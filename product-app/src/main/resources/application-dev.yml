@@ -24,3 +24,6 @@ resilience4j:
 
 products:
   url: https://fakestoreapi.com
+
+server:
+  port: 8083

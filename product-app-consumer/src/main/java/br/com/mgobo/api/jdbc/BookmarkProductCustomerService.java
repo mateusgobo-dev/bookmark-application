@@ -1,7 +1,6 @@
 package br.com.mgobo.api.jdbc;
 
 import br.com.mgobo.dto.BookmarkProductCustomerDto;
-import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +13,7 @@ public class BookmarkProductCustomerService {
     }
 
     public String save(BookmarkProductCustomerDto bookmarkProductCustomerDto) throws Exception {
-        int rows = this.jdbcTemplate.update("INSERT INTO bookmark_product VALUES (?,?)", bookmarkProductCustomerDto.idCustomer(), bookmarkProductCustomerDto.idCustomer());
+        int rows = this.jdbcTemplate.update("INSERT INTO bookmark_product VALUES (nextval('bookmark_product_seq'),?,?)", bookmarkProductCustomerDto.idCustomer(), bookmarkProductCustomerDto.idProduct());
         if (rows >= 1) {
             return "Bookmark product customer successfully added";
         }

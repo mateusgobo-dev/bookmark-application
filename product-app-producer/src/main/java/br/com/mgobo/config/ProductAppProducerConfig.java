@@ -4,6 +4,8 @@ import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.rabbit.core.RabbitAdmin;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,11 +18,27 @@ public class ProductAppProducerConfig {
     public static final String QUEUE_NAME = "bookmark-product-queue";
     public static final String ROUTING_KEY = "bookmark-product";
 
+    private RabbitAdmin rabbitAdmin;
+    private final RabbitTemplate rabbitTemplate;
+    public ProductAppProducerConfig(RabbitTemplate rabbitTemplate) {
+        this.rabbitTemplate = rabbitTemplate;
+    }
+
     @EventListener(ApplicationReadyEvent.class)
     public void init() {
         Queue q = this.queue();
         DirectExchange d = this.directExchange();
-        this.binding(q, d);
+        Binding binding = this.binding(q, d);
+
+        this.rabbitAdmin = rabbitAdmin();
+        this.rabbitAdmin.declareQueue(q);
+        this.rabbitAdmin.declareExchange(d);
+        this.rabbitAdmin.declareBinding(binding);
+    }
+
+    @Bean
+    public RabbitAdmin rabbitAdmin() {
+        return new RabbitAdmin(this.rabbitTemplate.getConnectionFactory());
     }
 
     @Bean
