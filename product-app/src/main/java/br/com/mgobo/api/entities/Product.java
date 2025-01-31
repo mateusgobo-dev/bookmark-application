@@ -15,7 +15,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "product")
-@SequenceGenerator(name = "product_seq", sequenceName = "product_seq", allocationSize = 1, initialValue = 1)
+@SequenceGenerator(name = "product_seq", sequenceName = "product_seq", allocationSize = 1)
 public class Product implements Serializable {
     private static final long serialVersionUID = 1L;
 

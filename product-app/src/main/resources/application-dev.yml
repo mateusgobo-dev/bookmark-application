@@ -1,11 +1,6 @@
 spring:
   application:
     name: product-app
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    username: sa
-    password: 456
-    url: jdbc:postgresql://localhost:5433/product-db
   cloud:
     openfeign:
       client:
@@ -14,12 +9,6 @@ spring:
             connect-timeout: 5000
             read-timeout: 5000
             logger-level: full
-  jpa:
-    hibernate:
-      ddl-auto: update
-  data:
-    jdbc:
-      dialect: postgresql
 
 #Resilience4j
 resilience4j:

@@ -12,14 +12,18 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Profile;
 import org.springframework.http.ResponseEntity;
 
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
+
+import static br.com.mgobo.api.parser.ProductDeserialize.*;
 
 @ComponentScan(value = "br.com.mgobo.*")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -32,16 +36,6 @@ public class ProductControllerTest extends BaseIntegratedTest {
 
     @Autowired
     private ProductRepository productRepository;
-
-    @BeforeAll
-    static void setUpBeforeClass() {
-        postgreSQLContainer.start();
-    }
-
-    @AfterAll
-    static void tearDownAfterClass() {
-        postgreSQLContainer.stop();
-    }
 
     @BeforeEach
     void setUp() throws IOException {
@@ -90,7 +84,7 @@ public class ProductControllerTest extends BaseIntegratedTest {
         try (ObjectInputStream iis = new ObjectInputStream(new FileInputStream(file))) {
             List<ProductDto> values = (List<ProductDto>) iis.readObject();
             values.stream().forEach(p -> {
-                saveProduct(ProductDeserialize.deserialize.apply(p));
+                saveProduct(deserialize.apply(p));
             });
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -100,7 +94,7 @@ public class ProductControllerTest extends BaseIntegratedTest {
     @Test
     public void findById() {
         ProductDto productDto = this.productClientCircuit.getProductsById(1L).getBody();
-        Product product = ProductDeserialize.deserialize.apply(productDto);
+        Product product = deserialize.apply(productDto);
         product.setId(null);
         product = this.productRepository.saveAndFlush(product);
         System.out.println(product);
