@@ -1,3 +1,5 @@
 package br.com.mgobo.dto;
 
-public record BookmarkProductCustomerDto(Long idProduct, Long idCustomer, boolean add) { }
+import java.io.Serializable;
+
+public record BookmarkProductCustomerDto(Long idProduct, Long idCustomer, String email, boolean add) implements Serializable { }

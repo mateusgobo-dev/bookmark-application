@@ -3,8 +3,8 @@ spring:
     name: product-app-producer
   rabbitmq:
     host: ${host:localhost}
-    username: ${user:mateus.gobo}
-    password: ${pass:admin}
+    username: ${user:mateusgobo}
+    password: ${pass:mateusgobo}
     port: ${port:5672}
     listener:
       direct:

@@ -5,23 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75bd5c58-630c-4a81-b0ae-4d948c1c4f9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/product-app-consumer/postgres.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-app-consumer/src/main/resources/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-app-consumer/src/test/java/br/com/mgobo/BaseIntegratedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-app-consumer/src/test/java/br/com/mgobo/broker/BookmarkProductConsumerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq/conf.d/10-defaults.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq/rabbitmq.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Favoritos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Favoritos/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmark-client/src/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/services/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app-consumer/postgres.sh" beforeDir="false" afterPath="$PROJECT_DIR$/postgres.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app-consumer/rabbitmq.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/api/jdbc/BookmarkProductCustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/api/jdbc/BookmarkProductCustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/broker/BookmarkProductConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/broker/BookmarkProductConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/config/ProductAppConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/config/ProductAppConsumerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/config/SettingsBroker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/dto/BookmarkProductCustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/dto/BookmarkProductCustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/parser/BookmarkProductCustomerDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/parser/BookmarkProductCustomerDeserializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/test/java/br/com/mgobo/ProductAppProducerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app-producer/rabbitmq.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/config/ProductAppProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/config/ProductAppProducerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/web/controllers/ProducerMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/web/controllers/ProducerMessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/web/controllers/dto/BookmarkProductCustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/web/controllers/dto/BookmarkProductCustomerDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-app-producer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-producer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/rabbitmq.sh" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/rabbitmq.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/broker/BookmarkProductProducer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-app/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/profile-app/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/profile-app/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/postgres.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app/rabbitmq.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +56,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -53,6 +69,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.BookmarkProductConsumerTest.consumerMessageTest.executor": "Run",
+    "JUnit.BookmarkProductConsumerTest.testRabbitMQContainerRunning.executor": "Debug",
+    "JUnit.BookmartProductConsumerTest.testRabbitMQContainerRunning.executor": "Debug",
     "JUnit.CustomerControllerTest.executor": "Run",
     "JUnit.ProductControllerTest-dev.executor": "Run",
     "JUnit.ProductControllerTest.deserializeProducts.executor": "Debug",
@@ -60,6 +79,8 @@
     "JUnit.ProductControllerTest.executor": "Run",
     "JUnit.ProductControllerTest.findAll.executor": "Debug",
     "JUnit.ProductControllerTest.findById.executor": "Debug",
+    "Maven.product-app-consumer [clean].executor": "Run",
+    "Maven.product-app-consumer [install].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -72,7 +93,7 @@
     "Spring Boot.ProductAppProducerApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mateus.gobo/github-repo/bookmark-application/product-app-consumer",
+    "last_opened_file_path": "/home/mateusgobo/github-repo/bookmark-application/product-app-consumer/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -89,14 +110,20 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.mgobo" />
       <recent name="br.com.mgobo.api.services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/product-app-consumer/src/main/resources" />
       <recent name="$PROJECT_DIR$/product-app-consumer" />
       <recent name="$PROJECT_DIR$/product-app/src/main/resources" />
       <recent name="$PROJECT_DIR$/bookmark-client/src/pages/Favoritos" />
       <recent name="$PROJECT_DIR$/bookmark-client/src" />
-      <recent name="$PROJECT_DIR$/profile-app/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rabbitmq" />
+      <recent name="$PROJECT_DIR$/rabbitmq/conf.d" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.mgobo.api.entities" />
@@ -113,7 +140,79 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductAppProducerApplication">
+  <component name="RunManager" selected="JUnit.BookmarkProductConsumerTest.consumerMessageTest">
+    <configuration name="BookmarkProductConsumerTest.consumerMessageTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="product-app-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mgobo.broker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.mgobo.broker" />
+      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.broker.BookmarkProductConsumerTest" />
+      <option name="METHOD_NAME" value="consumerMessageTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="spring.profiles.active" value="test" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookmarkProductConsumerTest.testRabbitMQContainerRunning" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-app-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mgobo.broker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.mgobo.broker" />
+      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.broker.BookmarkProductConsumerTest" />
+      <option name="METHOD_NAME" value="testRabbitMQContainerRunning" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="spring.profiles.active" value="test" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookmartProductConsumerTest.testRabbitMQContainerRunning" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="product-app-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mgobo.broker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.mgobo.broker" />
+      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.broker.BookmartProductConsumerTest" />
+      <option name="METHOD_NAME" value="testRabbitMQContainerRunning" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="spring.profiles.active" value="test" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CustomerControllerTest-dev" type="JUnit" factoryName="JUnit">
       <module name="profile-app" />
       <extension name="coverage">
@@ -134,27 +233,6 @@
       <envs>
         <env name="spring.profiles.active" value="dev" />
       </envs>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="profile-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.mgobo.profileapp.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
-        <option name="credential" />
-        <option name="region" />
-        <option name="useCurrentConnection" value="false" />
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.mgobo.profileapp.controllers" />
-      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.profileapp.controllers.CustomerControllerTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -255,6 +333,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CstMailDeliveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cst-mail-delivery" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.complianceit.services.CstMailDeliveryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="product-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.mgobo.ProductAppApplication" />
@@ -281,25 +366,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProfileAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="profile-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.mgobo.profileapp.ProfileAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="JUnit.BookmarkProductConsumerTest.consumerMessageTest" />
+      <item itemvalue="JUnit.BookmartProductConsumerTest.testRabbitMQContainerRunning" />
       <item itemvalue="JUnit.CustomerControllerTest-dev" />
       <item itemvalue="JUnit.ProductControllerTest-dev" />
+      <item itemvalue="JUnit.BookmarkProductConsumerTest.testRabbitMQContainerRunning" />
       <item itemvalue="JUnit.ProductControllerTest.deserializeProducts" />
       <item itemvalue="JUnit.ProductControllerTest.deserializeProductsAndSaveOnDatabase" />
-      <item itemvalue="JUnit.CustomerControllerTest" />
       <item itemvalue="JUnit.ProductControllerTest.findAll" />
       <item itemvalue="JUnit.ProductControllerTest.findById" />
+      <item itemvalue="Spring Boot.CstMailDeliveryApplication" />
+      <item itemvalue="Spring Boot.ProfileAppApplication" />
       <item itemvalue="Spring Boot.ProductAppApplication" />
       <item itemvalue="Spring Boot.ProductAppConsumerApplication" />
       <item itemvalue="Spring Boot.ProductAppProducerApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookmarkProductConsumerTest.testRabbitMQContainerRunning" />
         <item itemvalue="JUnit.ProductControllerTest.findAll" />
         <item itemvalue="JUnit.ProductControllerTest.deserializeProductsAndSaveOnDatabase" />
         <item itemvalue="JUnit.ProductControllerTest.deserializeProducts" />
         <item itemvalue="JUnit.ProductControllerTest.findById" />
-        <item itemvalue="JUnit.CustomerControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -326,6 +422,7 @@
       <workItem from="1738202224434" duration="9000" />
       <workItem from="1738202392506" duration="2885000" />
       <workItem from="1738286805678" duration="3720000" />
+      <workItem from="1738291987939" duration="25258000" />
     </task>
     <servers />
   </component>
@@ -339,6 +436,46 @@
           <url>file://$PROJECT_DIR$/product-app/src/main/java/br/com/mgobo/api/config/ConfigProductApp.java</url>
           <line>35</line>
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/broker/BookmarkProductConsumer.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/web/controllers/ProducerMessageController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/broker/BookmarkProductConsumer.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/config/ProductAppProducerConfig.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/config/ProductAppConsumerConfig.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/broker/BookmarkProductConsumer.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/api/jdbc/BookmarkProductCustomerService.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/api/jdbc/BookmarkProductCustomerService.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

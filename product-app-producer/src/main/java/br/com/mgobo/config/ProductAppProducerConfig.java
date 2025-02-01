@@ -16,7 +16,9 @@ public class ProductAppProducerConfig {
 
     public static final String EXCHANGE_NAME = "bookmark-product-exchange";
     public static final String QUEUE_NAME = "bookmark-product-queue";
+    public static final String QUEUE_NAME_MAIL = "bookmark-product-queue-email";
     public static final String ROUTING_KEY = "bookmark-product";
+    public static final String ROUTING_KEY_MAIL = "bookmark-product-mail";
 
     private RabbitAdmin rabbitAdmin;
     private final RabbitTemplate rabbitTemplate;
@@ -27,13 +29,17 @@ public class ProductAppProducerConfig {
     @EventListener(ApplicationReadyEvent.class)
     public void init() {
         Queue q = this.queue();
+        Queue qEmail = this.queueEmail();
         DirectExchange d = this.directExchange();
-        Binding binding = this.binding(q, d);
+        Binding binding = BindingBuilder.bind(q).to(d).with(ROUTING_KEY);
+        Binding bindingEmail = BindingBuilder.bind(qEmail).to(d).with(ROUTING_KEY_MAIL);
 
         this.rabbitAdmin = rabbitAdmin();
         this.rabbitAdmin.declareQueue(q);
+        this.rabbitAdmin.declareQueue(qEmail);
         this.rabbitAdmin.declareExchange(d);
         this.rabbitAdmin.declareBinding(binding);
+        this.rabbitAdmin.declareBinding(bindingEmail);
     }
 
     @Bean
@@ -51,18 +57,18 @@ public class ProductAppProducerConfig {
     }
 
     @Bean
-    public DirectExchange directExchange()  {
+    public Queue queueEmail()  {
         try {
-            return new DirectExchange(EXCHANGE_NAME);
+            return new Queue(QUEUE_NAME_MAIL, true, false, false);
         }catch (Exception e){
             throw new RuntimeException(e);
         }
     }
 
     @Bean
-    public Binding binding(Queue queue, DirectExchange directExchange)  {
+    public DirectExchange directExchange()  {
         try {
-            return BindingBuilder.bind(queue).to(directExchange).with(ROUTING_KEY);
+            return new DirectExchange(EXCHANGE_NAME);
         }catch (Exception e){
             throw new RuntimeException(e);
         }

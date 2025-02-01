@@ -35,6 +35,7 @@ function Produto() {
         const bookmarkProduct = {
             idProduct: produto.id,
             idCustomer: 1,
+            email: "mateusgobo@gmail.com",
             add: true
         }
 

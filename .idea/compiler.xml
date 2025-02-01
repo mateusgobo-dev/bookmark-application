@@ -9,8 +9,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="profile-app" />
         <module name="product-app" />
+        <module name="cst-mail-delivery" />
       </profile>
-      <profile name="Annotation profile for product-app-producer" enabled="true">
+      <profile name="Annotation profile for product-app-consumer" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -24,6 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cst-mail-delivery" options="-parameters" />
       <module name="product-app" options="-parameters" />
       <module name="product-app-consumer" options="-parameters" />
       <module name="product-app-producer" options="-parameters" />

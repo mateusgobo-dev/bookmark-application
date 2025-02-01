@@ -28,7 +28,8 @@ public class ProducerMessageController {
         try {
             BookmarkProductCustomerDto bookmarkProductCustomerDto  = (BookmarkProductCustomerDto) toObject.deserialize(message, BookmarkProductCustomerDto.class);
             this.rabbitTemplate.convertAndSend(EXCHANGE_NAME, ROUTING_KEY, message);
-            return ResponseEntity.created(new URI("/api/v1/bookmark/customer/%s".formatted(bookmarkProductCustomerDto.idCustomer()))).body("Favorito armazenado com sucesso!"
+            return ResponseEntity.created(new URI("/api/v1/bookmark/customer/%s".formatted(bookmarkProductCustomerDto.idCustomer())))
+                    .body(bookmarkProductCustomerDto.add() ? "Favorito armazenado com sucesso!" : "Favorito removido com sucesso!"
                     .formatted(bookmarkProductCustomerDto.idProduct(),bookmarkProductCustomerDto.idCustomer()));
         }catch (Exception ex){
             return ResponseEntity.badRequest().body(ex.getMessage());

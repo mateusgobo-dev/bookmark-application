@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/product-app/pom.xml" />
         <option value="$PROJECT_DIR$/product-app-producer/pom.xml" />
         <option value="$PROJECT_DIR$/product-app-consumer/pom.xml" />
+        <option value="$USER_HOME$/git/cst-commons-microservices/cst-s3-manager-bom/cst-mail-delivery/pom.xml" />
       </list>
     </option>
   </component>

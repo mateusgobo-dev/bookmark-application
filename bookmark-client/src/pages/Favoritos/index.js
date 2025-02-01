@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import {toast} from "react-toastify";
+import {bookmark} from "../../services/api"
 import "./favoritos.css"
 
 
@@ -21,7 +22,24 @@ function Favoritos() {
         })
         setProdutos(filtroProdutos);
         localStorage.setItem("@produtos", JSON.stringify(filtroProdutos));
-        toast.success(`${produto.title} removido da lista dos favoritos...`);
+
+        let bookmarkProduct = {
+            idProduct: produto.id,
+            idCustomer: 1,
+            email: "mateusgobo@gmail.com",
+            add: false
+        }
+
+        async function removeBookmark(){
+            await  bookmark.post("/api/v1/producer", bookmarkProduct).then(
+                response => {
+                    toast.success(response.data)
+                }
+            ).catch(()=>{
+                toast.error("Falha ao remover favorito.")
+            });
+        }
+        removeBookmark();
     }
 
     if (loading) {

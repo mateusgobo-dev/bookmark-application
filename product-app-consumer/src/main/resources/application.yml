@@ -1,10 +1,10 @@
 spring:
   application:
-    name: product-app-producer
+    name: product-app-consumer
   rabbitmq:
     host: ${host:localhost}
-    username: ${user:mateus.gobo}
-    password: ${pass:admin}
+    username: ${user:mateusgobo}
+    password: ${pass:mateusgobo}
     port: ${port:5672}
     listener:
       direct:
@@ -25,3 +25,15 @@ spring:
   data:
     jdbc:
       dialect: postgresql
+
+  mail:
+    host: smtp.mailtrap.io
+    port: 587
+    username: edd41a70512377
+    password: 27b5d018c48be2
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
