@@ -87,7 +87,7 @@ public class BookmarkProductConsumerTest extends BaseIntegratedTest {
     }
 
     @Test
-    void consumerMessageTest() {
+    void consumerMessageTest() throws InterruptedException {
         Assertions.assertThat(rabbitMQContainer.isRunning()).isTrue();
         System.out.println("RabbitMQ Host: " + rabbitMQContainer.getHost());
         System.out.println("AMQP Port: " + rabbitMQContainer.getAmqpPort());
@@ -102,5 +102,7 @@ public class BookmarkProductConsumerTest extends BaseIntegratedTest {
         rabbitTemplate.convertAndSend(EXCHANGE_NAME, ROUTING_KEY, value);
         String receivedMessage = (String) rabbitTemplate.receiveAndConvert(QUEUE_NAME);
         System.out.println(receivedMessage);
+
+        Thread.sleep(15000);
     }
 }

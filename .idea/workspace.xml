@@ -5,36 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75bd5c58-630c-4a81-b0ae-4d948c1c4f9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/product-app-consumer/src/main/resources/application-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-app-consumer/src/test/java/br/com/mgobo/BaseIntegratedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-app-consumer/src/test/java/br/com/mgobo/broker/BookmarkProductConsumerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/conf.d/10-defaults.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq/rabbitmq.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Usuario/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Usuario/usuario-form.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Favoritos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Favoritos/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-consumer/postgres.sh" beforeDir="false" afterPath="$PROJECT_DIR$/postgres.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-consumer/rabbitmq.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/api/jdbc/BookmarkProductCustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/api/jdbc/BookmarkProductCustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/broker/BookmarkProductConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/broker/BookmarkProductConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/config/ProductAppConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/config/ProductAppConsumerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/config/SettingsBroker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/dto/BookmarkProductCustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/dto/BookmarkProductCustomerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/parser/BookmarkProductCustomerDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/parser/BookmarkProductCustomerDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/test/java/br/com/mgobo/ProductAppProducerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-producer/rabbitmq.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/config/ProductAppProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/config/ProductAppProducerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/web/controllers/ProducerMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/web/controllers/ProducerMessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/web/controllers/dto/BookmarkProductCustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-producer/src/main/java/br/com/mgobo/web/controllers/dto/BookmarkProductCustomerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-producer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-producer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/postgres.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app/rabbitmq.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/components/Header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/components/Header/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/components/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/test/java/br/com/mgobo/broker/BookmarkProductConsumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/test/java/br/com/mgobo/broker/BookmarkProductConsumerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +70,7 @@
     "Spring Boot.ProductAppProducerApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mateusgobo/github-repo/bookmark-application/product-app-consumer/src/main/resources",
+    "last_opened_file_path": "/home/mateusgobo/github-repo/bookmark-application/bookmark-client/src/pages/Usuario",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -101,7 +78,7 @@
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "preferences.general",
-    "ts.external.directory.path": "/home/mateus.gobo/intellij/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/home/mateusgobo/ideaIU-2024.3.1.1/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -114,11 +91,11 @@
       <recent name="br.com.mgobo.api.services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bookmark-client/src/pages/Usuario" />
       <recent name="$PROJECT_DIR$/product-app-consumer/src/main/resources" />
       <recent name="$PROJECT_DIR$/product-app-consumer" />
       <recent name="$PROJECT_DIR$/product-app/src/main/resources" />
       <recent name="$PROJECT_DIR$/bookmark-client/src/pages/Favoritos" />
-      <recent name="$PROJECT_DIR$/bookmark-client/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/rabbitmq" />
@@ -422,7 +399,7 @@
       <workItem from="1738202224434" duration="9000" />
       <workItem from="1738202392506" duration="2885000" />
       <workItem from="1738286805678" duration="3720000" />
-      <workItem from="1738291987939" duration="25258000" />
+      <workItem from="1738291987939" duration="32668000" />
     </task>
     <servers />
   </component>

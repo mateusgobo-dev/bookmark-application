@@ -6,6 +6,7 @@ function Header(){
         <header>
             <Link className="logo" to="/">Produtos Favoritos</Link>
             <Link className="favoritos" to="/favoritos">Meus Produtos</Link>
+            <Link className="autenticar" to="/usuario">Autenticar</Link>
         </header>
     )
 }
