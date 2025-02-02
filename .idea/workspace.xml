@@ -5,13 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75bd5c58-630c-4a81-b0ae-4d948c1c4f9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Usuario/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Usuario/usuario-form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Autenticar/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookmark-client/src/services/bookmark_api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookmark-client/src/services/customer_api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookmark-client/src/services/product_api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile-app/postgres-profile.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookmark-client/src/components/Header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/components/Header/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookmark-client/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/components/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Favoritos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Favoritos/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Usuario/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Usuario/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Usuario/usuario-form.css" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Usuario/usuario-form.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookmark-client/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/test/java/br/com/mgobo/broker/BookmarkProductConsumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/test/java/br/com/mgobo/broker/BookmarkProductConsumerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark-client/src/services/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile-app/postgres.sh" beforeDir="false" afterPath="$PROJECT_DIR$/profile-app/postgres-product.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile-app/src/main/java/br/com/mgobo/profileapp/api/services/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile-app/src/main/java/br/com/mgobo/profileapp/api/services/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile-app/src/main/java/br/com/mgobo/profileapp/web/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/profile-app/src/main/java/br/com/mgobo/profileapp/web/controllers/CustomerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +58,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.BookmarkProductConsumerTest.consumerMessageTest.executor": "Run",
+    "JUnit.BookmarkProductConsumerTest.consumerMessageTest.executor": "Debug",
     "JUnit.BookmarkProductConsumerTest.testRabbitMQContainerRunning.executor": "Debug",
     "JUnit.BookmartProductConsumerTest.testRabbitMQContainerRunning.executor": "Debug",
     "JUnit.CustomerControllerTest.executor": "Run",
@@ -68,9 +80,10 @@
     "Spring Boot.ProductAppApplication.executor": "Run",
     "Spring Boot.ProductAppConsumerApplication.executor": "Debug",
     "Spring Boot.ProductAppProducerApplication.executor": "Debug",
+    "Spring Boot.ProfileAppApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mateusgobo/github-repo/bookmark-application/bookmark-client/src/pages/Usuario",
+    "last_opened_file_path": "/home/mateusgobo/github-repo/bookmark-application/bookmark-client/src/services",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,11 +104,11 @@
       <recent name="br.com.mgobo.api.services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bookmark-client/src/services" />
       <recent name="$PROJECT_DIR$/bookmark-client/src/pages/Usuario" />
       <recent name="$PROJECT_DIR$/product-app-consumer/src/main/resources" />
       <recent name="$PROJECT_DIR$/product-app-consumer" />
       <recent name="$PROJECT_DIR$/product-app/src/main/resources" />
-      <recent name="$PROJECT_DIR$/bookmark-client/src/pages/Favoritos" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/rabbitmq" />
@@ -399,7 +412,7 @@
       <workItem from="1738202224434" duration="9000" />
       <workItem from="1738202392506" duration="2885000" />
       <workItem from="1738286805678" duration="3720000" />
-      <workItem from="1738291987939" duration="32668000" />
+      <workItem from="1738291987939" duration="50020000" />
     </task>
     <servers />
   </component>

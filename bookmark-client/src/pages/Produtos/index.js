@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
-import {api, bookmark} from "../../services/api";
+import product_api from "../../services/product_api";
+import bookmark_api from "../../services/bookmark_api"
 import {Link} from "react-router-dom";
 import "./produto-info.css"
 import {toast} from "react-toastify";
@@ -12,7 +13,7 @@ function Produto() {
 
     useEffect(() => {
         async function loadProdutos() {
-            const response = await api.get(`/products/${id}`)
+            const response = await product_api.get(`/products/${id}`)
                 .then(response => {
                     setProduto(response.data)
                     setLoading(false);
@@ -48,7 +49,7 @@ function Produto() {
         localStorage.setItem("@produtos", JSON.stringify(produtosSalvos));
 
         async function addBookmark(){
-            await  bookmark.post("/api/v1/producer", bookmarkProduct).then(
+            await  bookmark_api.post("/api/v1/producer", bookmarkProduct).then(
                 response => {
                     toast.success(response.data)
                 }

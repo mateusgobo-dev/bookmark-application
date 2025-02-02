@@ -8,6 +8,7 @@ import Erro from "./pages/Erro";
 import Produto from "./pages/Produtos";
 import Favoritos from "./pages/Favoritos";
 import Usuario from "./pages/Usuario";
+import Autenticar from "./pages/Autenticar";
 
 function RoutesApp(){
     return (
@@ -18,6 +19,7 @@ function RoutesApp(){
                 <Route path="/produto/:id" element={<Produto/>}></Route>
                 <Route path="/favoritos" element={<Favoritos/>}></Route>
                 <Route path="/usuario" element={<Usuario />}></Route>
+                <Route path="/autenticar" element={<Autenticar/>}></Route>
                 <Route path="*" element={<Erro />}></Route>
             </Routes>
         </BrowserRouter>

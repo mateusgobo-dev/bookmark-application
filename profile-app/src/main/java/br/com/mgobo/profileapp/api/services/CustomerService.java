@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import java.net.URI;
+import java.util.Objects;
 import java.util.Optional;
 
 import static br.com.mgobo.profileapp.api.parsers.CustomerDeserialize.json;
@@ -24,15 +25,20 @@ public class CustomerService {
     private final CustomerRepository customerRepository;
 
     public ResponseEntity<?> saveCustomer(CustomerDto customer) {
-        CustomerDto newCustomer = customerDto.apply(customerRepository.saveAndFlush(CustomerDeserialize.customer.apply(customer)));
-        return ResponseEntity.created(URI.create("/find/" + newCustomer.id()))
-                .header("/find/" + newCustomer.id(), newCustomer.name())
-                .body("Customer has been created %s".formatted(newCustomer));
+        Customer customerValidate = this.customerRepository.findCustomerByMail(customer.mail());
+        if (customerValidate != null) {
+            return ResponseEntity.status(HttpStatus.CONFLICT).body("Customer already exists");
+        }else {
+            CustomerDto newCustomer = customerDto.apply(customerRepository.save(CustomerDeserialize.customer.apply(customer)));
+            return ResponseEntity.created(URI.create("/find/" + newCustomer.id()))
+                    .header("/find/" + newCustomer.id(), newCustomer.name())
+                    .body("Customer has been created %s".formatted(newCustomer));
+        }
     }
 
     public ResponseEntity<?> updateCustomer(CustomerDto customer) {
         try {
-            CustomerDto updateCustomer = customerDto.apply(customerRepository.saveAndFlush(CustomerDeserialize.customer.apply(customer)));
+            CustomerDto updateCustomer = customerDto.apply(customerRepository.save(CustomerDeserialize.customer.apply(customer)));
             return ResponseEntity.status(HttpStatus.NO_CONTENT).header("/get", "/find/" + customer.id().toString()).body(updateCustomer);
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
@@ -77,7 +83,7 @@ public class CustomerService {
     public ResponseEntity<?> findCustomerByMailAndPassword(String email, String password) {
         try {
             CustomerDto customer = Optional.ofNullable(customerDto.apply(customerRepository.findCustomerByMailAndPassword(email, password))).orElseThrow(() -> new RuntimeException("Customer has not been founded for email or password"));
-            return ResponseEntity.ok(customer);
+            return Objects.nonNull(customer) ?  ResponseEntity.ok(customer) : ResponseEntity.status(HttpStatus.NOT_FOUND).body("Email ou senha inválidos...");
         }catch (Exception e){
             return ResponseEntity.badRequest().body(e.getMessage());
         }

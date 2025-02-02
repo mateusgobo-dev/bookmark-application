@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {api} from "../../services/api";
+import product_api from "../../services/product_api";
 import {Link} from "react-router-dom";
 import "./home.css"
 
@@ -10,12 +10,12 @@ function Home() {
 
 
     useEffect(() => {
-        async function loadFilmes() {
-            const response = await api.get("/products");
+        async function loadProdutos() {
+            const response = await product_api.get("/products");
             setProdutos(response.data)
             setLoading(false);
         }
-        loadFilmes();
+        loadProdutos();
     }, []);
     if(loading){
         return (
