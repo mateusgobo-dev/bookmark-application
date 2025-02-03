@@ -7,7 +7,7 @@ Ações possíveis através do app:
 4. Remoção de favoritos;
 5. Envio de email;
 
-**_Refinamentos_**
+**_Refinamentos_**   
 A aplicação precisa de refinamento técnico:
 1. Uso de tokens na senha dos usuários;
 2. Ajustes na exibição da lista de favoritos;
