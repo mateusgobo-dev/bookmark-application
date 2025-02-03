@@ -113,6 +113,7 @@ docker exec -it rabbitmq rabbitmqctl set_user_tags mateusgobo administrator
 **Observações:**   
 1. **Os app's, profile-app, product-app e product-app-producer, possuem testes integrados à containers**
 2. É possível rodar com **compose**, basta criar o descritor;
-3. As melhorias do refinamento serão desenvolvidas;
-4. É possível escalar todos os projetos com kubernetes, para atingir a marca dos 100.000 minuto;
-5. Foi realizado um teste de estress local. Em poucos segundos foram inseridas 20.000 mensagens no banco;
+3. É possível escalar todos os projetos com kubernetes, para atingir a marca dos 100.000 minuto;
+4. Foi realizado um teste de estress local. Em poucos segundos foram inseridas 20.000 mensagens no banco;
+5. O ideal é rodar em uma rede docker;
+6. As melhorias do refinamento serão desenvolvidas;
