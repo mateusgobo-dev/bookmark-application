@@ -58,7 +58,7 @@ docker run --rm  --name product-db \
 
 # Product-consumer
 Não possui path's, responsável por consumir mensagens do **broker** e finalizar a operação.   
-Após incluir o registro no postgres, submete a mensagem por email;
+Após incluir o registro no postgres, submete a mensagem por email;   
 Serviço utiliza uma base de dados **_postgres_** e um **broker rabbitmq**. Antes de colocar o serviço no ar, é necessário subir o **postgres e o rabbitmq**. Execute os comandos para colocar os serviços no ar:
 ```
 docker run --rm  --name product-db \
@@ -90,7 +90,7 @@ docker exec -it rabbitmq rabbitmqctl set_user_tags mateusgobo administrator
 
 # Product-producer
 Possui um path's, responsável por enviar mensagens ao **broker**;   
-Após incluir o registro no postgres, submete a mensagem por email;
+Após incluir o registro no postgres, submete a mensagem por email;   
 Serviço utiliza um **broker rabbitmq**. Antes de colocar o serviço no ar, é necessário subir o **rabbitmq**. Execute o comando para colocar o serviço no ar:
 ```
 docker run --rm --name rabbitmq \
