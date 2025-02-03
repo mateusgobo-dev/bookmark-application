@@ -10,7 +10,12 @@ function Produto() {
     const {id} = useParams();
     const [produto, setProduto] = useState({});
     const [loading, setLoading] = useState(true);
+    const profile = localStorage.getItem("@profile");
 
+    if(profile === null){
+        toast.warn("Realize seu cadastro ou efetue o login para dar início a sua lista de favoritos...")
+        setTimeout(redirectToUser, 3000);
+    }
     useEffect(() => {
         async function loadProdutos() {
             const response = await product_api.get(`/products/${id}`)
@@ -29,35 +34,46 @@ function Produto() {
         }
     }, []);
 
+    function redirectToUser(){
+        window.location.href = '/usuario';
+    }
+
     function salvarProduto(){
         const minhaLista = localStorage.getItem("@produtos");
         let produtosSalvos = JSON.parse(minhaLista) || [];
 
+        let usuario = JSON.parse(profile);
+        console.log(usuario)
         const bookmarkProduct = {
             idProduct: produto.id,
-            idCustomer: 1,
-            email: "mateusgobo@gmail.com",
+            idCustomer: usuario.id,
+            email: usuario.email,
             add: true
         }
 
-        const hasProduto = produtosSalvos.some(p => p.id === produto.id);
-        if(hasProduto){
-            toast.warn('Produto já faz parte da lista');
-            return;
-        }
-        produtosSalvos.push(produto)
-        localStorage.setItem("@produtos", JSON.stringify(produtosSalvos));
+        if(produtosSalvos.length <= 4) {
+            const hasProduto = produtosSalvos.some(p => p.id === produto.id);
+            if (hasProduto) {
+                toast.warn('Produto já faz parte da lista');
+                return;
+            }
+            produtosSalvos.push(produto)
+            localStorage.setItem("@produtos", JSON.stringify(produtosSalvos));
 
-        async function addBookmark(){
-            await  bookmark_api.post("/api/v1/producer", bookmarkProduct).then(
-                response => {
-                    toast.success(response.data)
-                }
-            ).catch(()=>{
-                toast.error("Falha ao adicionar favorito.")
-            });
+            async function addBookmark() {
+                await bookmark_api.post("/api/v1/producer", bookmarkProduct).then(
+                    response => {
+                        toast.success(response.data)
+                    }
+                ).catch(() => {
+                    toast.error("Falha ao adicionar favorito.")
+                });
+            }
+
+            addBookmark();
+        }else{
+            toast.warn("Sua lista de favoritos é limitada à 5 produtos...");
         }
-        addBookmark();
     }
     
     if (loading) {

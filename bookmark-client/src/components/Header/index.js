@@ -7,8 +7,18 @@ function Header(){
     const [usuario, setUsuario] = useState({})
 
     useEffect(() => {
-        setUsuario(JSON.parse(profile));
-    }, []);
+        let usuario = {};
+        if(profile === null) {
+            usuario = {
+                id: 0,
+                name: 'Usuário',
+                email: 'usuario@usuario.com'
+            }
+        }else{
+            usuario = JSON.parse(profile);
+        }
+        setUsuario(usuario);
+    }, [profile]);
 
     return(
         <header>

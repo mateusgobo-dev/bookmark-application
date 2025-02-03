@@ -8,13 +8,22 @@ import "./favoritos.css"
 function Favoritos() {
     const [produtos, setProdutos] = useState([]);
     const [loading, setLoadiing] = useState(true);
+    const profile = localStorage.getItem("@profile")
 
+    if(profile === null){
+        toast.warn("Realize seu cadastro ou efetue o login para dar início a sua lista de favoritos...");
+        setTimeout(redirectToUser, 3000);
+    }
 
     useEffect(() => {
         setLoadiing(false);
         setProdutos(JSON.parse(localStorage.getItem("@produtos")) || []);
 
-    }, []);
+    }, [profile]);
+
+    function redirectToUser(){
+        window.location.href = '/usuario';
+    }
 
     function removerProduto(produto) {
         let filtroProdutos = produtos.filter(p => {
@@ -23,10 +32,12 @@ function Favoritos() {
         setProdutos(filtroProdutos);
         localStorage.setItem("@produtos", JSON.stringify(filtroProdutos));
 
+        let usuario = JSON.parse(profile);
+        console.log(usuario)
         let bookmarkProduct = {
             idProduct: produto.id,
-            idCustomer: 1,
-            email: "mateusgobo@gmail.com",
+            idCustomer: usuario.id,
+            email: usuario.email,
             add: false
         }
 

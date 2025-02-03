@@ -40,7 +40,7 @@ function Usuario() {
                         document.getElementById(values[0]).value = '';
                     });
                 }).catch((reason) => {
-                    toast.error(reason.status === 409 ? `Usuario ${usuarioDto.name} já cadastrado.` : "Erro ao criar usuário");
+                    toast.error(reason.status === 409 ? `O email ${usuarioDto.mail} já foi utilizado por outro usuário.` : "Erro ao criar usuário");
                 });
             }
 

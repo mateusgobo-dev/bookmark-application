@@ -48,19 +48,19 @@
     justify-content: center;
     padding: 10px 0;
     font-size: 24px;
-    background-color: #116FEB;
+    background-color: black;
     text-decoration: none;
     color: white;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
-.area-buttons a {
+.produto-info a {
     text-decoration: none;
     color: Black;
 }
 
-.area-buttons :hover{
+.produto-info  a:hover{
     background-color: brown;
     color: White;
     transition: all 0.5s;
