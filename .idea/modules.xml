@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/bookmark-application.iml" filepath="$PROJECT_DIR$/.idea/bookmark-application.iml" />
       <module fileurl="file://$PROJECT_DIR$/bookmark-client/bookmark-client.iml" filepath="$PROJECT_DIR$/bookmark-client/bookmark-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../car-system/car-system.iml" filepath="$PROJECT_DIR$/../car-system/car-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../car-system/carsystem-client.iml" filepath="$PROJECT_DIR$/../car-system/carsystem-client.iml" />
     </modules>
   </component>
 </project>

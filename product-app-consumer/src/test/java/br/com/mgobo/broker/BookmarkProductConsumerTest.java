@@ -2,11 +2,9 @@ package br.com.mgobo.broker;
 
 import br.com.mgobo.BaseIntegratedTest;
 import br.com.mgobo.dto.BookmarkProductCustomerDto;
-import br.com.mgobo.parser.BookmarkProductCustomerDeserializer;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
@@ -20,13 +18,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.testcontainers.containers.RabbitMQContainer;
-import org.testcontainers.shaded.org.checkerframework.checker.units.qual.A;
 import org.testcontainers.utility.DockerImageName;
 
-import java.sql.SQLOutput;
-
 import static br.com.mgobo.config.ProductAppConsumerConfig.*;
-import static br.com.mgobo.parser.BookmarkProductCustomerDeserializer.*;
+import static br.com.mgobo.parser.BookmarkProductCustomerDeserializer.toJson;
 
 @ComponentScan(value = "br.com.mgobo*")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -101,7 +96,7 @@ public class BookmarkProductConsumerTest extends BaseIntegratedTest {
         String value = toJson.apply(bookmarkProductCustomerDto);
         rabbitTemplate.convertAndSend(EXCHANGE_NAME, ROUTING_KEY, value);
         String receivedMessage = (String) rabbitTemplate.receiveAndConvert(QUEUE_NAME);
-        System.out.println(receivedMessage);
+        System.out.println(String.format("Message received %s".formatted(receivedMessage)));
 
         Thread.sleep(15000);
     }

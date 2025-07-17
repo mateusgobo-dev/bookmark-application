@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75bd5c58-630c-4a81-b0ae-4d948c1c4f9d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmark-client/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Erro/erro.css" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Erro/erro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Erro/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Erro/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Favoritos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Favoritos/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Home/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Home/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/produto-info.css" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Produtos/produto-info.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmark-client/src/pages/Usuario/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark-client/src/pages/Usuario/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-app-consumer/src/test/java/br/com/mgobo/broker/BookmarkProductConsumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-app-consumer/src/test/java/br/com/mgobo/broker/BookmarkProductConsumerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,13 +21,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Record" />
         <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../car-system" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -51,6 +51,10 @@
     "JUnit.BookmarkProductConsumerTest.consumerMessageTest.executor": "Debug",
     "JUnit.BookmarkProductConsumerTest.testRabbitMQContainerRunning.executor": "Debug",
     "JUnit.BookmartProductConsumerTest.testRabbitMQContainerRunning.executor": "Debug",
+    "JUnit.BrandCategoryControllerTest.executor": "Debug",
+    "JUnit.BrandCategoryControllerTest.testCreate.executor": "Run",
+    "JUnit.ColorControllerTest.executor": "Debug",
+    "JUnit.ColorControllerTest.testFindAll.executor": "Run",
     "JUnit.CustomerControllerTest.executor": "Run",
     "JUnit.ProductControllerTest-dev.executor": "Run",
     "JUnit.ProductControllerTest.deserializeProducts.executor": "Debug",
@@ -58,6 +62,8 @@
     "JUnit.ProductControllerTest.executor": "Run",
     "JUnit.ProductControllerTest.findAll.executor": "Debug",
     "JUnit.ProductControllerTest.findById.executor": "Debug",
+    "Maven.car-profile [clean].executor": "Run",
+    "Maven.car-profile [install].executor": "Run",
     "Maven.product-app-consumer [clean].executor": "Run",
     "Maven.product-app-consumer [install].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -67,20 +73,22 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CarProfileApplication.executor": "Run",
     "Spring Boot.ProductAppApplication.executor": "Run",
     "Spring Boot.ProductAppConsumerApplication.executor": "Debug",
     "Spring Boot.ProductAppProducerApplication.executor": "Debug",
     "Spring Boot.ProfileAppApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mateusgobo/github-repo/bookmark-application/bookmark-client/src/services",
+    "last_opened_file_path": "/home/mateusgobo/github-repo/library-system",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.general",
+    "settings.editor.selected.configurable": "fileTemplates",
     "ts.external.directory.path": "/home/mateusgobo/ideaIU-2024.3.1.1/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -90,15 +98,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.mgobo.web" />
       <recent name="br.com.mgobo" />
       <recent name="br.com.mgobo.api.services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../car-system/carsystem-client/src" />
+      <recent name="$PROJECT_DIR$/../car-system/car-profile" />
+      <recent name="$PROJECT_DIR$/../car-system/car-profile/src/main/resources" />
       <recent name="$PROJECT_DIR$/bookmark-client/src/services" />
       <recent name="$PROJECT_DIR$/bookmark-client/src/pages/Usuario" />
-      <recent name="$PROJECT_DIR$/product-app-consumer/src/main/resources" />
-      <recent name="$PROJECT_DIR$/product-app-consumer" />
-      <recent name="$PROJECT_DIR$/product-app/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/rabbitmq" />
@@ -106,6 +115,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.mgobo.web.controller" />
       <recent name="br.com.mgobo.api.entities" />
       <recent name="br.com.mgobo.web.parser" />
     </key>
@@ -120,7 +130,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BookmarkProductConsumerTest.consumerMessageTest">
+  <component name="RunManager" selected="Spring Boot.CarProfileApplication">
     <configuration name="BookmarkProductConsumerTest.consumerMessageTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="product-app-consumer" />
       <extension name="coverage">
@@ -193,6 +203,74 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BrandCategoryControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="car-profile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mgobo.web.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.mgobo.web.controller" />
+      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.web.controller.BrandCategoryControllerTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BrandCategoryControllerTest.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="car-profile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mgobo.web.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.mgobo.web.controller" />
+      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.web.controller.BrandCategoryControllerTest" />
+      <option name="METHOD_NAME" value="testCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ColorControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="car-profile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mgobo.web.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.mgobo.web.controller" />
+      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.web.controller.ColorControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ColorControllerTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="car-profile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mgobo.web.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.mgobo.web.controller" />
+      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.web.controller.ColorControllerTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CustomerControllerTest-dev" type="JUnit" factoryName="JUnit">
       <module name="profile-app" />
       <extension name="coverage">
@@ -241,74 +319,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductControllerTest.deserializeProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="product-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.mgobo.productapp.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.mgobo.productapp.controllers" />
-      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.productapp.controllers.ProductControllerTest" />
-      <option name="METHOD_NAME" value="deserializeProducts" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
     </configuration>
-    <configuration name="ProductControllerTest.deserializeProductsAndSaveOnDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="product-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.mgobo.productapp.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.mgobo.productapp.controllers" />
-      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.productapp.controllers.ProductControllerTest" />
-      <option name="METHOD_NAME" value="deserializeProductsAndSaveOnDatabase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductControllerTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="product-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.mgobo.productapp.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="CarProfileApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="car-profile" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.mgobo.CarProfileApplication" />
       <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
         <option name="credential" />
         <option name="region" />
         <option name="useCurrentConnection" value="false" />
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.mgobo.productapp.controllers" />
-      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.productapp.controllers.ProductControllerTest" />
-      <option name="METHOD_NAME" value="findAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <envs>
-        <env name="spring.profiles.active" value="dev" />
-      </envs>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductControllerTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="product-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.mgobo.productapp.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.mgobo.productapp.controllers" />
-      <option name="MAIN_CLASS_NAME" value="br.com.mgobo.productapp.controllers.ProductControllerTest" />
-      <option name="METHOD_NAME" value="findById" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -354,15 +375,17 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JavaScript Debug.Debug Application" />
       <item itemvalue="JUnit.BookmarkProductConsumerTest.consumerMessageTest" />
       <item itemvalue="JUnit.BookmartProductConsumerTest.testRabbitMQContainerRunning" />
       <item itemvalue="JUnit.CustomerControllerTest-dev" />
       <item itemvalue="JUnit.ProductControllerTest-dev" />
+      <item itemvalue="JUnit.BrandCategoryControllerTest" />
+      <item itemvalue="JUnit.BrandCategoryControllerTest.testCreate" />
+      <item itemvalue="JUnit.ColorControllerTest" />
+      <item itemvalue="JUnit.ColorControllerTest.testFindAll" />
       <item itemvalue="JUnit.BookmarkProductConsumerTest.testRabbitMQContainerRunning" />
-      <item itemvalue="JUnit.ProductControllerTest.deserializeProducts" />
-      <item itemvalue="JUnit.ProductControllerTest.deserializeProductsAndSaveOnDatabase" />
-      <item itemvalue="JUnit.ProductControllerTest.findAll" />
-      <item itemvalue="JUnit.ProductControllerTest.findById" />
+      <item itemvalue="Spring Boot.CarProfileApplication" />
       <item itemvalue="Spring Boot.CstMailDeliveryApplication" />
       <item itemvalue="Spring Boot.ProfileAppApplication" />
       <item itemvalue="Spring Boot.ProductAppApplication" />
@@ -371,11 +394,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BrandCategoryControllerTest" />
+        <item itemvalue="JUnit.BrandCategoryControllerTest.testCreate" />
+        <item itemvalue="JUnit.ColorControllerTest" />
+        <item itemvalue="JUnit.ColorControllerTest.testFindAll" />
         <item itemvalue="JUnit.BookmarkProductConsumerTest.testRabbitMQContainerRunning" />
-        <item itemvalue="JUnit.ProductControllerTest.findAll" />
-        <item itemvalue="JUnit.ProductControllerTest.deserializeProductsAndSaveOnDatabase" />
-        <item itemvalue="JUnit.ProductControllerTest.deserializeProducts" />
-        <item itemvalue="JUnit.ProductControllerTest.findById" />
       </list>
     </recent_temporary>
   </component>
@@ -402,7 +425,10 @@
       <workItem from="1738202224434" duration="9000" />
       <workItem from="1738202392506" duration="2885000" />
       <workItem from="1738286805678" duration="3720000" />
-      <workItem from="1738291987939" duration="54292000" />
+      <workItem from="1738291987939" duration="54999000" />
+      <workItem from="1738626879740" duration="6010000" />
+      <workItem from="1738713438584" duration="20096000" />
+      <workItem from="1738885429388" duration="2015000" />
     </task>
     <servers />
   </component>
@@ -421,6 +447,21 @@
           <url>file://$PROJECT_DIR$/product-app-consumer/src/main/java/br/com/mgobo/config/ProductAppConsumerConfig.java</url>
           <line>34</line>
           <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../car-system/car-profile/src/main/java/br/com/mgobo/web/controller/ColorController.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../car-system/car-profile/src/main/java/br/com/mgobo/api/service/ColorService.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../car-system/car-profile/src/main/java/br/com/mgobo/web/controller/CarController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
